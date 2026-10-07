@@ -31,6 +31,36 @@
       }
     },
     {
+      "id": "claude-skills",
+      "title": "Claude Skills",
+      "hook": "Twelve skills I built for Claude, each from a failure I got tired of repeating. Four sets: finding what I already figured out, keeping decisions between chats, building ML notebooks that hold up, and catching costly errors.",
+      "metric": "12 skills · 4 sets · open source",
+      "visual": "assets/claude-skills-cover.svg",
+      "visualAlt": "Twelve Claude skills in four sets",
+      "diagram": "assets/claude-skills-overview.svg",
+      "diagramAlt": "Which skill for which problem",
+      "status": "live",
+      "links": [
+        {
+          "label": "Repo",
+          "url": "https://github.com/lorisca-builds/lori-claude-skills",
+          "kind": "github"
+        },
+        {
+          "label": "Start with cross-project-extraction",
+          "url": "https://github.com/lorisca-builds/lori-claude-skills/tree/main/cross-project-extraction",
+          "kind": "github"
+        }
+      ],
+      "body": {
+        "problem": "Claude kept failing me in the same few ways. Work stayed locked in one project. Decisions got lost between threads. Notebook text didn't match the code. It asked me things its tools could answer.",
+        "approach": "Turn each repeated failure into a skill: a short set of instructions Claude follows when that situation comes up. Every skill states what it refuses to do, because the refusals are what stop the failure.",
+        "hers": "I build from my own failure modes. I interview before building, cut scope early, and write down why each decision was made. Each skill's README carries that story.",
+        "result": "Twelve skills published in four sets, each with the problem behind it, setup notes and limits. Anyone can install one in a few minutes.",
+        "lesson": "A good skill is mostly boundaries. What it won't do matters more than what it will."
+      }
+    },
+    {
       "id": "site-cms",
       "title": "The CMS behind this site",
       "hook": "My portfolio runs on plain HTML and JSON — and I edit every word of it from a custom admin panel, no developer needed.",
