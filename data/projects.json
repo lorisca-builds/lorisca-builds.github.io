@@ -31,33 +31,31 @@
       }
     },
     {
-      "id": "claude-skills",
-      "title": "Claude Skills",
-      "hook": "Twelve skills I built for Claude, each from a failure I got tired of repeating. Four sets: finding what I already figured out, keeping decisions between chats, building ML notebooks that hold up, and catching costly errors.",
-      "metric": "12 skills · 4 sets · open source",
-      "visual": "assets/claude-skills-cover.svg",
-      "visualAlt": "Twelve Claude skills in four sets",
-      "diagram": "assets/claude-skills-overview.svg",
-      "diagramAlt": "Which skill for which problem",
+      "id": "site-cms",
+      "title": "The CMS behind this site",
+      "hook": "My portfolio runs on plain HTML and JSON — and I edit every word of it from a custom admin panel, no developer needed.",
+      "metric": "3 sites · 1 admin · 0 build step",
+      "visual": "https://raw.githubusercontent.com/lori-sca/lori-sca.github.io/main/assets/site-cms-diagram.svg",
+      "visualAlt": "Diagram: admin panel edits JSON, GitHub API commits, three sites go live",
       "status": "live",
       "links": [
         {
           "label": "Repo",
-          "url": "https://github.com/lorisca-builds/lori-claude-skills",
+          "url": "https://github.com/lori-sca/lori-sca.github.io",
           "kind": "github"
         },
         {
-          "label": "Start with cross-project-extraction",
-          "url": "https://github.com/lorisca-builds/lori-claude-skills/tree/main/cross-project-extraction",
-          "kind": "github"
+          "label": "Live site",
+          "url": "https://lori-sca.github.io",
+          "kind": "demo"
         }
       ],
       "body": {
-        "problem": "Claude kept failing me in the same few ways. Work stayed locked in one project. Decisions got lost between threads. Notebook text didn't match the code. It asked me things its tools could answer.",
-        "approach": "Turn each repeated failure into a skill: a short set of instructions Claude follows when that situation comes up. Every skill states what it refuses to do, because the refusals are what stop the failure.",
-        "hers": "I build from my own failure modes. I interview before building, cut scope early, and write down why each decision was made. Each skill's README carries that story.",
-        "result": "Twelve skills published in four sets, each with the problem behind it, setup notes and limits. Anyone can install one in a few minutes.",
-        "lesson": "A good skill is mostly boundaries. What it won't do matters more than what it will."
+        "problem": "Static sites are cheap and fast, but every copy change meant editing HTML by hand — or paying for a CMS I didn't need. I wanted blog-style editing with flat-file simplicity.",
+        "approach": "Built a single-page admin that reads and writes the sites' JSON content files through the GitHub API. Edit words, upload photos, reorder sections, hit save — live in about a minute. No build step, no database, no monthly bill.",
+        "hers": "Designed from my own failure modes — I kept breaking things with half-finished edits, so every section saves independently and the editor links straight to the page it changes.",
+        "result": "One admin runs all three of my sites. Every word on the About page was edited there.",
+        "lesson": "The best tool is the one you'll actually use."
       }
     }
   ],
