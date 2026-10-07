@@ -29,6 +29,41 @@
         "result": "One board, every open loop, ranked. The scan runs daily; I clear it in one sitting.",
         "lesson": "The job isn't organizing tasks. It's noticing them."
       }
+    },
+    {
+      "id": "claude-skills",
+      "title": "Claude Skills",
+      "hook": "Two skills for finding what I already figured out. One moves knowledge between Claude projects. The other helps when I'm in the right project and can't name what I want.",
+      "metric": "2 skills · open source · free to install",
+      "visual": "assets/claude-skills-cover.svg",
+      "visualAlt": "Two Claude skills: cross-project-extraction and retrieval-coach",
+      "diagram": "assets/claude-skills-how-it-works.svg",
+      "diagramAlt": "One trip with three stops, and the retrieval coach flow",
+      "status": "live",
+      "links": [
+        {
+          "label": "Repo",
+          "url": "https://github.com/lorisca-builds/lori-claude-skills",
+          "kind": "github"
+        },
+        {
+          "label": "cross-project-extraction",
+          "url": "https://github.com/lorisca-builds/lori-claude-skills/tree/main/cross-project-extraction",
+          "kind": "github"
+        },
+        {
+          "label": "retrieval-coach",
+          "url": "https://github.com/lorisca-builds/lori-claude-skills/tree/main/retrieval-coach",
+          "kind": "github"
+        }
+      ],
+      "body": {
+        "problem": "I work across several Claude projects. What I figure out in one stays locked there, and even in the right project I often can't find the words to search for it.",
+        "approach": "Treat the search as a planned trip: pack a brief at home, search at the destination, unpack back home. A copy-paste block carries the context, because Claude has no memory across projects. A second skill coaches the query before any search runs.",
+        "hers": "Both started as workarounds I got tired of repeating. I think in patterns first and the words come later, so the coach shows why a keyword worked. Querying is a muscle I want to train.",
+        "result": "Two skills, published with the problem behind each, setup notes and limits. Anyone can install them in a few minutes.",
+        "lesson": "Project isolation is a constraint to design around. A good handoff block does more than shared memory would."
+      }
     }
   ],
   "prototyping": "More tools are in the workshop — each one earns its card here when it has a live demo and a written playbook."
