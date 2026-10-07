@@ -34,7 +34,7 @@
           <h1 id="hero-headline"></h1>
           <p class="lede" id="hero-lede"></p>
           <div class="cta-row">
-            <a class="btn primary" href="https://github.com/lorisca-builds" target="_blank" rel="noopener">The org on GitHub</a>
+            <a class="btn primary" data-org-github href="https://github.com/lorisca-builds" target="_blank" rel="noopener">The org on GitHub</a>
             <a class="btn ghost" href="https://lori-sca.github.io">Back to main site</a>
           </div>
         </div>
@@ -75,17 +75,23 @@
   </div>
 </footer>
 
-<script src="content.js"></script>
 <script src="site.js"></script>
 <script>
-  document.getElementById("hero-eyebrow").textContent = HERO.eyebrow;
-  document.getElementById("hero-headline").textContent = HERO.headline;
-  document.getElementById("hero-lede").textContent = HERO.lede;
-  renderCards("builds-grid", PROJECTS, "cols-1");
-  if (PROTOTYPING) {
-    document.getElementById("proto-line").style.display = "grid";
-    document.getElementById("proto-text").textContent = PROTOTYPING;
-  }
+  Promise.all([loadJSON("data/site.json"), loadJSON("data/hero.json"), loadJSON("data/projects.json")])
+    .then(([site, hero, data]) => {
+      applyOrgChrome(site);
+      document.getElementById("hero-eyebrow").textContent = hero.eyebrow;
+      document.getElementById("hero-headline").textContent = hero.headline;
+      document.getElementById("hero-lede").textContent = hero.lede;
+      renderCards("builds-grid", data.projects || [], "cols-1");
+      if (data.prototyping) {
+        document.getElementById("proto-line").style.display = "grid";
+        document.getElementById("proto-text").textContent = data.prototyping;
+      }
+    })
+    .catch(() => {
+      document.getElementById("hero-headline").textContent = "Content couldn't load — try refreshing.";
+    });
 </script>
 </body>
 </html>

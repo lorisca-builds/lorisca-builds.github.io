@@ -130,3 +130,61 @@ document.addEventListener("DOMContentLoaded", () => {
   const y = document.getElementById("year");
   if (y) y.textContent = new Date().getFullYear();
 });
+
+/* ---------- data-driven pages: shared helpers ---------- */
+
+async function loadJSON(path) {
+  const r = await fetch(path);
+  if (!r.ok) throw new Error("missing " + path);
+  return r.json();
+}
+
+function applyOrgChrome(site) {
+  if (!site) return;
+  document.querySelectorAll(".wm-name").forEach((e) => { e.textContent = site.orgLabel || site.owner; });
+  document.querySelectorAll(".wm-role").forEach((e) => { e.textContent = site.org || ""; });
+  const fl = document.querySelector(".foot-links");
+  if (fl) {
+    fl.innerHTML = "";
+    [
+      [site.owner, site.mainSite, false],
+      ["Analytics Work", "https://lorisca-analytics.github.io", false],
+      ["Builds", "https://lorisca-builds.github.io", false],
+      ["About", site.mainSite + "/about.html", false],
+      ["Email", "mailto:" + site.email, false],
+      ["LinkedIn", "https://www.linkedin.com/in/lorisca", true],
+      ["GitHub", site.githubOrg, true],
+    ].forEach(([label, href, ext]) => {
+      const a = el("a", "", esc(label));
+      a.href = href;
+      if (ext) { a.target = "_blank"; a.rel = "noopener"; }
+      fl.appendChild(a);
+    });
+  }
+  const fine = document.querySelector(".site-footer .fine");
+  if (fine) fine.innerHTML = "&copy; " + new Date().getFullYear() + " " + esc(site.owner || "");
+  document.querySelectorAll('[data-org-github]').forEach((a) => { a.href = site.githubOrg; });
+}
+
+/* Embed block: YouTube plays inline, anything else becomes a link card. */
+function embedNode(url) {
+  if (!url) return null;
+  const m = String(url).match(/(?:youtube\.com\/(?:watch\?v=|shorts\/)|youtu\.be\/)([\w-]{6,})/);
+  if (m) {
+    const wrap = el("div", "embed-video");
+    const fr = document.createElement("iframe");
+    fr.src = "https://www.youtube.com/embed/" + m[1];
+    fr.loading = "lazy";
+    fr.allow = "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture";
+    fr.allowFullscreen = true;
+    wrap.appendChild(fr);
+    return wrap;
+  }
+  let host = url;
+  try { host = new URL(url).hostname.replace(/^www\./, ""); } catch (e) {}
+  const a = el("a", "embed-card");
+  a.href = url; a.target = "_blank"; a.rel = "noopener";
+  a.appendChild(el("span", "", "&#128279;"));
+  a.appendChild(el("span", "", esc(host)));
+  return a;
+}
