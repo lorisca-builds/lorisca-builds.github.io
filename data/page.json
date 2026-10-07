@@ -1,0 +1,42 @@
+{
+  "meta": {
+    "title": "Builds — Lorisca Cessia",
+    "description": "Working tools with live demos. Designed from real failure modes, built so the thinking is visible in ten seconds."
+  },
+  "backLink": {
+    "label": "Lorisca ↗",
+    "href": "https://lori-sca.github.io"
+  },
+  "heroCtas": [
+    {
+      "label": "The org on GitHub",
+      "href": "",
+      "orgGithub": true,
+      "newTab": true
+    },
+    {
+      "label": "Back to main site",
+      "href": "https://lori-sca.github.io",
+      "orgGithub": false,
+      "newTab": false
+    }
+  ],
+  "nowCard": {
+    "title": "What lives here",
+    "rows": [
+      {
+        "k": "Rule",
+        "v": "No card without a live demo and a written playbook"
+      },
+      {
+        "k": "Method",
+        "v": "Designed from my own failure modes; the thinking must survive the 10-second test"
+      },
+      {
+        "k": "Stack",
+        "v": "Tools-agnostic — whatever fits the problem"
+      }
+    ]
+  },
+  "prototypingLabel": "Prototyping"
+}

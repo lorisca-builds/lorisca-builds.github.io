@@ -33,17 +33,19 @@
           <span class="eyebrow" id="hero-eyebrow"></span>
           <h1 id="hero-headline"></h1>
           <p class="lede" id="hero-lede"></p>
-          <div class="cta-row">
+          <div class="cta-row" id="hero-ctas">
             <a class="btn primary" data-org-github href="https://github.com/lorisca-builds" target="_blank" rel="noopener">The org on GitHub</a>
             <a class="btn ghost" href="https://lori-sca.github.io">Back to main site</a>
           </div>
         </div>
         <aside class="hero-side">
           <div class="now-card">
-            <p class="nc-title">What lives here</p>
+            <p class="nc-title" id="nc-title">What lives here</p>
+            <div id="nc-rows">
             <div class="nc-row"><span class="k">Rule</span><span class="v">No card without a live demo and a written playbook</span></div>
             <div class="nc-row"><span class="k">Method</span><span class="v">Designed from my own failure modes; the thinking must survive the 10-second test</span></div>
             <div class="nc-row"><span class="k">Stack</span><span class="v">Tools-agnostic — whatever fits the problem</span></div>
+            </div>
           </div>
         </aside>
       </div>
@@ -54,7 +56,7 @@
     <div class="wrap">
       <div id="builds-grid"></div>
       <div class="proto-line" id="proto-line" style="display:none;">
-        <strong>Prototyping</strong><span id="proto-text"></span>
+        <strong id="proto-label">Prototyping</strong><span id="proto-text"></span>
       </div>
     </div>
   </section>
@@ -77,9 +79,11 @@
 
 <script src="site.js"></script>
 <script>
-  Promise.all([loadJSON("data/site.json"), loadJSON("data/hero.json"), loadJSON("data/projects.json")])
-    .then(([site, hero, data]) => {
+  Promise.all([loadJSON("data/site.json"), loadJSON("data/hero.json"), loadJSON("data/projects.json"), loadJSON("data/page.json").catch(() => null)])
+    .then(([site, hero, data, page]) => {
       applyOrgChrome(site);
+      renderOrgPage(site, page);
+      setText("proto-label", page && page.prototypingLabel);
       document.getElementById("hero-eyebrow").textContent = hero.eyebrow;
       document.getElementById("hero-headline").textContent = hero.headline;
       document.getElementById("hero-lede").textContent = hero.lede;
