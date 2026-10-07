@@ -33,12 +33,12 @@
     {
       "id": "claude-skills",
       "title": "Claude Skills",
-      "hook": "Two skills for finding what I already figured out. One moves knowledge between Claude projects. The other helps when I'm in the right project and can't name what I want.",
-      "metric": "2 skills · open source · free to install",
+      "hook": "Twelve skills I built for Claude, each from a failure I got tired of repeating. Four sets: finding what I already figured out, keeping decisions between chats, building ML notebooks that hold up, and catching costly errors.",
+      "metric": "12 skills · 4 sets · open source",
       "visual": "assets/claude-skills-cover.svg",
-      "visualAlt": "Two Claude skills: cross-project-extraction and retrieval-coach",
-      "diagram": "assets/claude-skills-how-it-works.svg",
-      "diagramAlt": "One trip with three stops, and the retrieval coach flow",
+      "visualAlt": "Twelve Claude skills in four sets",
+      "diagram": "assets/claude-skills-overview.svg",
+      "diagramAlt": "Which skill for which problem",
       "status": "live",
       "links": [
         {
@@ -47,22 +47,17 @@
           "kind": "github"
         },
         {
-          "label": "cross-project-extraction",
+          "label": "Start with cross-project-extraction",
           "url": "https://github.com/lorisca-builds/lori-claude-skills/tree/main/cross-project-extraction",
-          "kind": "github"
-        },
-        {
-          "label": "retrieval-coach",
-          "url": "https://github.com/lorisca-builds/lori-claude-skills/tree/main/retrieval-coach",
           "kind": "github"
         }
       ],
       "body": {
-        "problem": "I work across several Claude projects. What I figure out in one stays locked there, and even in the right project I often can't find the words to search for it.",
-        "approach": "Treat the search as a planned trip: pack a brief at home, search at the destination, unpack back home. A copy-paste block carries the context, because Claude has no memory across projects. A second skill coaches the query before any search runs.",
-        "hers": "Both started as workarounds I got tired of repeating. I think in patterns first and the words come later, so the coach shows why a keyword worked. Querying is a muscle I want to train.",
-        "result": "Two skills, published with the problem behind each, setup notes and limits. Anyone can install them in a few minutes.",
-        "lesson": "Project isolation is a constraint to design around. A good handoff block does more than shared memory would."
+        "problem": "Claude kept failing me in the same few ways. Work stayed locked in one project. Decisions got lost between threads. Notebook text didn't match the code. It asked me things its tools could answer.",
+        "approach": "Turn each repeated failure into a skill: a short set of instructions Claude follows when that situation comes up. Every skill states what it refuses to do, because the refusals are what stop the failure.",
+        "hers": "I build from my own failure modes. I interview before building, cut scope early, and write down why each decision was made. Each skill's README carries that story.",
+        "result": "Twelve skills published in four sets, each with the problem behind it, setup notes and limits. Anyone can install one in a few minutes.",
+        "lesson": "A good skill is mostly boundaries. What it won't do matters more than what it will."
       }
     }
   ],

@@ -1,42 +1,46 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Inter, Helvetica, Arial, sans-serif">
-  <rect width="1200" height="675" fill="#eef2f6"/>
-  <text x="72" y="96" font-size="18" font-weight="700" letter-spacing="4" fill="#4a6a8f">CLAUDE SKILLS · OPEN SOURCE</text>
-  <text x="72" y="176" font-size="58" font-weight="800" letter-spacing="-1.5" fill="#1e2d42">Find what you</text>
-  <text x="72" y="244" font-size="58" font-weight="800" letter-spacing="-1.5" fill="#5b7fa6">already figured out.</text>
-
-  <g>
-    <rect x="72" y="312" width="508" height="291" rx="18" fill="#ffffff" stroke="#d5dfe8" stroke-width="2"/>
-    <text x="104" y="362" font-size="15" font-weight="700" letter-spacing="3" fill="#4a6a8f">WRONG PROJECT</text>
-    <text x="104" y="408" font-size="30" font-weight="800" fill="#1e2d42">cross-project-extraction</text>
-    <text x="104" y="446" font-size="19" fill="#4a6a8f">A planned trip between Claude projects.</text>
-    <g font-size="16" font-weight="700">
-      <rect x="104" y="492" width="118" height="48" rx="24" fill="#1e2d42"/>
-      <text x="163" y="522" text-anchor="middle" fill="#ffffff">Outbound</text>
-      <path d="M232 516 H262" stroke="#5b7fa6" stroke-width="3"/><path d="M262 516 l-9 -6 v12 z" fill="#5b7fa6"/>
-      <rect x="274" y="492" width="104" height="48" rx="24" fill="#1e2d42"/>
-      <text x="326" y="522" text-anchor="middle" fill="#ffffff">Extract</text>
-      <path d="M388 516 H418" stroke="#5b7fa6" stroke-width="3"/><path d="M418 516 l-9 -6 v12 z" fill="#5b7fa6"/>
-      <rect x="430" y="492" width="118" height="48" rx="24" fill="#1e2d42"/>
-      <text x="489" y="522" text-anchor="middle" fill="#ffffff">Inbound</text>
-    </g>
-    <text x="104" y="576" font-size="15" fill="#4a6a8f">A copy-paste block carries context between stops.</text>
-  </g>
-
-  <g>
-    <rect x="620" y="312" width="508" height="291" rx="18" fill="#ffffff" stroke="#d5dfe8" stroke-width="2"/>
-    <text x="652" y="362" font-size="15" font-weight="700" letter-spacing="3" fill="#4a6a8f">RIGHT PROJECT, WRONG WORDS</text>
-    <text x="652" y="408" font-size="30" font-weight="800" fill="#1e2d42">retrieval-coach</text>
-    <text x="652" y="446" font-size="19" fill="#4a6a8f">Talk first, search second.</text>
-    <g font-size="16" font-weight="700">
-      <rect x="652" y="492" width="150" height="48" rx="24" fill="#eef2f6" stroke="#d5dfe8" stroke-width="2"/>
-      <text x="727" y="522" text-anchor="middle" fill="#4a6a8f">"that thing..."</text>
-      <path d="M812 516 H842" stroke="#5b7fa6" stroke-width="3"/><path d="M842 516 l-9 -6 v12 z" fill="#5b7fa6"/>
-      <rect x="854" y="492" width="110" height="48" rx="24" fill="#5b7fa6"/>
-      <text x="909" y="522" text-anchor="middle" fill="#ffffff">3 angles</text>
-      <path d="M974 516 H1004" stroke="#5b7fa6" stroke-width="3"/><path d="M1004 516 l-9 -6 v12 z" fill="#5b7fa6"/>
-      <rect x="1016" y="492" width="80" height="48" rx="24" fill="#1e2d42"/>
-      <text x="1056" y="522" text-anchor="middle" fill="#ffffff">Found</text>
-    </g>
-    <text x="652" y="576" font-size="15" fill="#4a6a8f">Then it shows why the keyword worked.</text>
-  </g>
+<rect width="1200" height="675" fill="#eef2f6"/>
+<text x="72" y="92" font-size="18" font-weight="700" letter-spacing="4" fill="#4a6a8f">12 CLAUDE SKILLS · OPEN SOURCE</text>
+<text x="72" y="166" font-size="56" font-weight="800" letter-spacing="-1.5" fill="#1e2d42">Built from my own</text>
+<text x="72" y="230" font-size="56" font-weight="800" letter-spacing="-1.5" fill="#5b7fa6">failure modes.</text>
+<rect x="72" y="286" width="252" height="330" rx="18" fill="#ffffff" stroke="#d5dfe8" stroke-width="2"/>
+<text x="96" y="330" font-size="14" font-weight="700" letter-spacing="3" fill="#5b7fa6">FIND IT</text>
+<text x="96" y="366" font-size="19" font-weight="800" fill="#1e2d42">Knowledge retrieval</text>
+<text x="96" y="394" font-size="13" fill="#4a6a8f">Get back what you already knew.</text>
+<rect x="96" y="420" width="204" height="36" rx="18" fill="#1e2d42"/>
+<text x="198.0" y="443" text-anchor="middle" font-size="13.5" font-weight="700" fill="#ffffff">cross-project-extraction</text>
+<rect x="96" y="466" width="204" height="36" rx="18" fill="#1e2d42"/>
+<text x="198.0" y="489" text-anchor="middle" font-size="13.5" font-weight="700" fill="#ffffff">retrieval-coach</text>
+<rect x="340" y="286" width="252" height="330" rx="18" fill="#ffffff" stroke="#d5dfe8" stroke-width="2"/>
+<text x="364" y="330" font-size="14" font-weight="700" letter-spacing="3" fill="#5b7fa6">KEEP IT</text>
+<text x="364" y="366" font-size="19" font-weight="800" fill="#1e2d42">Sessions and handoff</text>
+<text x="364" y="394" font-size="13" fill="#4a6a8f">Keep decisions between chats.</text>
+<rect x="364" y="420" width="204" height="36" rx="18" fill="#1e2d42"/>
+<text x="466.0" y="443" text-anchor="middle" font-size="13.5" font-weight="700" fill="#ffffff">context-engineering</text>
+<rect x="364" y="466" width="204" height="36" rx="18" fill="#1e2d42"/>
+<text x="466.0" y="489" text-anchor="middle" font-size="13.5" font-weight="700" fill="#ffffff">chat-archive</text>
+<rect x="364" y="512" width="204" height="36" rx="18" fill="#1e2d42"/>
+<text x="466.0" y="535" text-anchor="middle" font-size="13.5" font-weight="700" fill="#ffffff">project-archive</text>
+<rect x="364" y="558" width="204" height="36" rx="18" fill="#1e2d42"/>
+<text x="466.0" y="581" text-anchor="middle" font-size="13.5" font-weight="700" fill="#ffffff">transcript-processor</text>
+<rect x="608" y="286" width="252" height="330" rx="18" fill="#ffffff" stroke="#d5dfe8" stroke-width="2"/>
+<text x="632" y="330" font-size="14" font-weight="700" letter-spacing="3" fill="#5b7fa6">PROVE IT</text>
+<text x="632" y="366" font-size="19" font-weight="800" fill="#1e2d42">ML notebooks</text>
+<text x="632" y="394" font-size="13" fill="#4a6a8f">Look, frame, build, audit.</text>
+<rect x="632" y="420" width="204" height="36" rx="18" fill="#1e2d42"/>
+<text x="734.0" y="443" text-anchor="middle" font-size="13.5" font-weight="700" fill="#ffffff">new-dataset-workflow</text>
+<rect x="632" y="466" width="204" height="36" rx="18" fill="#1e2d42"/>
+<text x="734.0" y="489" text-anchor="middle" font-size="13.5" font-weight="700" fill="#ffffff">ml-business-insight</text>
+<rect x="632" y="512" width="204" height="36" rx="18" fill="#1e2d42"/>
+<text x="734.0" y="535" text-anchor="middle" font-size="13.5" font-weight="700" fill="#ffffff">ml-notebook-executor</text>
+<rect x="632" y="558" width="204" height="36" rx="18" fill="#1e2d42"/>
+<text x="734.0" y="581" text-anchor="middle" font-size="13.5" font-weight="700" fill="#ffffff">ml-notebook-audit</text>
+<rect x="876" y="286" width="252" height="330" rx="18" fill="#ffffff" stroke="#d5dfe8" stroke-width="2"/>
+<text x="900" y="330" font-size="14" font-weight="700" letter-spacing="3" fill="#5b7fa6">CHECK IT</text>
+<text x="900" y="366" font-size="19" font-weight="800" fill="#1e2d42">Small guardrails</text>
+<text x="900" y="394" font-size="13" fill="#4a6a8f">Catch the costly errors.</text>
+<rect x="900" y="420" width="204" height="36" rx="18" fill="#1e2d42"/>
+<text x="1002.0" y="443" text-anchor="middle" font-size="13.5" font-weight="700" fill="#ffffff">self-audit</text>
+<rect x="900" y="466" width="204" height="36" rx="18" fill="#1e2d42"/>
+<text x="1002.0" y="489" text-anchor="middle" font-size="13.5" font-weight="700" fill="#ffffff">linkedin-connection-note</text>
 </svg>
