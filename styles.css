@@ -291,3 +291,9 @@ footer { border-top: 1px solid var(--hairline); background: var(--white); }
   font-family: var(--mono); font-size: .66rem; letter-spacing: .1em;
   text-transform: uppercase; color: var(--steel);
 }
+
+/* ---------- section media: editor-added picture + links (data-driven) ---------- */
+.sec-media { margin: 2rem 0 0; border-radius: 14px; overflow: hidden; }
+.sec-media img { width: 100%; display: block; }
+.sec-media figcaption { font-size: .85rem; color: var(--steel); margin-top: .6rem; }
+.sec-links { display: flex; flex-wrap: wrap; gap: .5rem 1.5rem; margin-top: 1.25rem; }
