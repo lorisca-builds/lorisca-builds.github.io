@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Builds — Lorisca Cessia</title>
+<meta name="description" content="Working tools with live demos. Designed from real failure modes, built so the thinking is visible in ten seconds.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Martian+Mono:wght@500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body data-page="builds">
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a class="wordmark" href="index.html">
+      <span class="org-hero-logo" style="width:2rem;height:2rem;font-size:.85rem;border-radius:8px;margin:0;">B</span>
+      <span class="wm-name">Builds</span>
+      <span class="wm-role">lorisca-builds</span>
+    </a>
+    <div class="nav-links">
+      <a data-nav="main" href="https://lori-sca.github.io">Lorisca ↗</a>
+    </div>
+  </div>
+</nav>
+
+<main>
+  <section class="hero">
+    <div class="wrap">
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <span class="eyebrow" id="hero-eyebrow"></span>
+          <h1 id="hero-headline"></h1>
+          <p class="lede" id="hero-lede"></p>
+          <div class="cta-row">
+            <a class="btn primary" href="https://github.com/lorisca-builds" target="_blank" rel="noopener">The org on GitHub</a>
+            <a class="btn ghost" href="https://lori-sca.github.io">Back to main site</a>
+          </div>
+        </div>
+        <aside class="hero-side">
+          <div class="now-card">
+            <p class="nc-title">What lives here</p>
+            <div class="nc-row"><span class="k">Rule</span><span class="v">No card without a live demo and a written playbook</span></div>
+            <div class="nc-row"><span class="k">Method</span><span class="v">Designed from my own failure modes; the thinking must survive the 10-second test</span></div>
+            <div class="nc-row"><span class="k">Stack</span><span class="v">Tools-agnostic — whatever fits the problem</span></div>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="wrap">
+      <div id="builds-grid"></div>
+      <div class="proto-line" id="proto-line" style="display:none;">
+        <strong>Prototyping</strong><span id="proto-text"></span>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot-links">
+      <a href="https://lori-sca.github.io">Lorisca Cessia</a>
+      <a href="https://lorisca-analytics.github.io">Analytics Work</a>
+      <a href="https://lorisca-builds.github.io">Builds</a>
+      <a href="https://lori-sca.github.io/about.html">About</a>
+      <a href="mailto:loriscatuuk@gmail.com">Email</a>
+      <a href="https://www.linkedin.com/in/lorisca" target="_blank" rel="noopener">LinkedIn</a>
+      <a href="https://github.com/lori-sca" target="_blank" rel="noopener">GitHub</a>
+    </div>
+    <p class="fine">&copy; <span id="year"></span> Lorisca Cessia</p>
+  </div>
+</footer>
+
+<script src="content.js"></script>
+<script src="site.js"></script>
+<script>
+  document.getElementById("hero-eyebrow").textContent = HERO.eyebrow;
+  document.getElementById("hero-headline").textContent = HERO.headline;
+  document.getElementById("hero-lede").textContent = HERO.lede;
+  renderCards("builds-grid", PROJECTS, "cols-1");
+  if (PROTOTYPING) {
+    document.getElementById("proto-line").style.display = "grid";
+    document.getElementById("proto-text").textContent = PROTOTYPING;
+  }
+</script>
+</body>
+</html>
