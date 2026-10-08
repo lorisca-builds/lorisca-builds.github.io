@@ -4,7 +4,7 @@
       "id": "adhd-project-manager",
       "title": "ADHD Project Manager",
       "hook": "A scheduled scan that catches everything I leave midway across AI chats and lands it on one prioritized board. Built for my ADHD; built so anyone can repurpose it.",
-      "metric": "Live demo · open playbook",
+      "metric": "70+ shipped · live demo",
       "visual": "https://raw.githubusercontent.com/lori-sca/muse-adhd-project-manager/main/docs/screenshots/board.png",
       "visualAlt": "Prioritized board of open loops",
       "diagram": "https://raw.githubusercontent.com/lori-sca/muse-adhd-project-manager/main/docs/problem-diagram.svg",
@@ -26,7 +26,7 @@
         "problem": "AI chats are where work goes to die midway — brilliant threads abandoned, commitments unconfirmed, and no single place to see what's actually open.",
         "approach": "A scheduled scan reads every thread, finds open loops, and lands them on one prioritized board: sense → draft → queue → review.",
         "hers": "Designed from my own failure modes — ADHD as a design constraint, never an apology. Produced is not shipped.",
-        "result": "One board, every open loop, ranked. The scan runs daily; I clear it in one sitting.",
+        "result": "In daily use since September 2026. 70+ items confirmed shipped, and only my confirmation clears one.",
         "lesson": "The job isn't organizing tasks. It's noticing them."
       }
     },
