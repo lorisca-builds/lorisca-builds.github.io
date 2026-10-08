@@ -38,5 +38,23 @@
       }
     ]
   },
-  "prototypingLabel": "Prototyping"
+  "prototypingLabel": "Prototyping",
+  "layout": {
+    "sections": [
+      {
+        "id": "top",
+        "type": "builds-hero",
+        "menu": "",
+        "hidden": false,
+        "style": {}
+      },
+      {
+        "id": "builds",
+        "type": "builds-list",
+        "menu": "",
+        "hidden": false,
+        "style": {}
+      }
+    ]
+  }
 }
