@@ -8,6 +8,9 @@ function el(tag, cls, html) {
 }
 
 function esc(s) {
+  return String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;");
+}
+
 /* Mounts an editor-added picture + links for a section.
    Renders nothing when both are empty. Safe to call on re-render. */
 function mountSectionMedia(sectionId, sec) {
@@ -53,9 +56,6 @@ function mountSectionMedia(sectionId, sec) {
     if (wrap) wrap.prepend(frag);
     else section.prepend(frag);
   }
-}
-
-  return String(s).replace(/&/g, "&amp;").replace(/</g, "&lt;");
 }
 
 /* ---------- data-driven page furniture (data/page.json) ---------- */
