@@ -4,15 +4,15 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <script>/* theme before first paint: ?theme= from another of the three sites, else stored choice, else device */(function(){try{var d=document.documentElement,u=new URL(location.href),q=u.searchParams.get("theme");if(q==="dark"||q==="light"){localStorage.setItem("lori-theme",q);u.searchParams.delete("theme");history.replaceState(history.state,"",u.pathname+u.search+u.hash);}var s=localStorage.getItem("lori-theme");d.setAttribute("data-theme",s==="dark"||s==="light"?s:(window.matchMedia&&matchMedia("(prefers-color-scheme: dark)").matches?"dark":"light"));}catch(e){}})();</script>
-<title>Builds — Lorisca Cessia</title>
-<meta name="description" content="Working tools with live demos. Designed from real failure modes, built so the thinking is visible in ten seconds.">
+<title>Builds · Lorisca Cessia</title>
+<meta name="description" content="Working tools and side projects, each with the code and a walkthrough.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css?v=2">
+<link rel="stylesheet" href="styles.css?v=3">
 <link rel="stylesheet" href="https://lori-sca.github.io/theme.css">
-<link rel="stylesheet" href="builds.css?v=2">
-<link rel="stylesheet" href="https://lori-sca.github.io/shared.css?v=2">
+<link rel="stylesheet" href="https://lori-sca.github.io/shared.css?v=3">
+<link rel="stylesheet" href="builds.css?v=3">
 </head>
 <body data-page="builds">
 
@@ -22,28 +22,28 @@
     <div class="lh-links" id="lh-links"><a href="https://lori-sca.github.io/">Home</a><a href="https://lorisca-analytics.github.io/">Work</a><a href="https://lorisca-builds.github.io/">Builds</a><a href="https://lori-sca.github.io/off-the-clock.html">Off the clock</a><a href="https://lori-sca.github.io/about.html">About</a></div>
   </div>
 </nav>
-<script src="https://lori-sca.github.io/header.js?v=2"></script>
+<script src="https://lori-sca.github.io/header.js?v=3"></script>
 
 <main>
   <section class="hero" id="top">
     <div class="wrap">
       <div class="hero-grid">
         <div class="hero-copy">
-          <span class="eyebrow" id="hero-eyebrow"></span>
+          <span class="ds-label" id="hero-eyebrow"></span>
           <h1 id="hero-headline"></h1>
           <p class="lede" id="hero-lede"></p>
           <div class="cta-row" id="hero-ctas">
-            <a class="btn primary" data-org-github href="https://github.com/lorisca-builds" target="_blank" rel="noopener">The org on GitHub</a>
-            <a class="btn ghost" href="https://lori-sca.github.io">Back to main site</a>
+            <a class="ds-btn ds-btn-dark" data-org-github href="https://github.com/lorisca-builds" target="_blank" rel="noopener">The org on GitHub</a>
+            <a class="ds-btn ds-btn-line" href="https://lori-sca.github.io">Back to main site</a>
           </div>
         </div>
         <aside class="hero-side">
           <div class="now-card">
             <p class="nc-title" id="nc-title">What lives here</p>
             <div id="nc-rows">
-            <div class="nc-row"><span class="k">Rule</span><span class="v">No card without a live demo and a written playbook</span></div>
-            <div class="nc-row"><span class="k">Method</span><span class="v">Designed from my own failure modes; the thinking must survive the 10-second test</span></div>
-            <div class="nc-row"><span class="k">Stack</span><span class="v">Tools-agnostic — whatever fits the problem</span></div>
+            <div class="nc-row"><span class="k">Rule</span><span class="v">Every card has working code and a walkthrough</span></div>
+            <div class="nc-row"><span class="k">Method</span><span class="v">Some fix a problem I kept running into. Some I build for fun.</span></div>
+            <div class="nc-row"><span class="k">Stack</span><span class="v">Tools-agnostic, whatever fits the problem or the idea</span></div>
             </div>
           </div>
         </aside>
@@ -77,8 +77,8 @@
 </footer>
 
 <script src="site.js"></script>
-<script src="https://lori-sca.github.io/skeleton.js"></script>
+<script src="https://lori-sca.github.io/skeleton.js?v=4"></script>
 <script src="https://lori-sca.github.io/theme.js"></script>
-<script src="builds.js"></script>
+<script src="builds.js?v=3"></script>
 </body>
 </html>

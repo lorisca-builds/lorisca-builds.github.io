@@ -1,13 +1,41 @@
 {
   "projects": [
     {
+      "id": "site-cms",
+      "title": "The CMS behind this site",
+      "hook": "My portfolio runs on plain HTML and JSON. I edit every word of it from a custom admin panel, no developer needed.",
+      "metric": "3 sites · 1 admin · 0 build step",
+      "visual": "https://raw.githubusercontent.com/lori-sca/lori-sca.github.io/main/assets/site-cms-diagram.svg?v=2",
+      "visualAlt": "Diagram: admin panel edits JSON, GitHub API commits, three sites go live",
+      "status": "live",
+      "links": [
+        {
+          "label": "Repo",
+          "url": "https://github.com/lori-sca/lori-sca.github.io",
+          "kind": "github"
+        },
+        {
+          "label": "Live site",
+          "url": "https://lori-sca.github.io",
+          "kind": "demo"
+        }
+      ],
+      "body": {
+        "problem": "Static sites are cheap and fast, but every copy change meant editing HTML by hand, or paying for a CMS I didn't need. I wanted blog-style editing with flat-file simplicity.",
+        "approach": "Built a single-page admin that reads and writes the sites' JSON content files through the GitHub API. Edit words, upload photos, reorder sections, hit save and it goes live. No build step, no database, no monthly bill.",
+        "hers": "Designed from my own failure modes. I kept breaking things with half-finished edits, so every section saves independently and the editor links straight to the page it changes.",
+        "result": "One admin runs all three of my sites. Every word on the About page was edited there.",
+        "lesson": "The best tool is the one you'll actually use."
+      }
+    },
+    {
       "id": "adhd-project-manager",
-      "title": "ADHD Project Manager",
-      "hook": "A scheduled scan that catches everything I leave midway across AI chats and lands it on one prioritized board. Built for my ADHD; built so anyone can repurpose it.",
-      "metric": "70+ shipped · live demo",
-      "visual": "https://raw.githubusercontent.com/lori-sca/muse-adhd-project-manager/main/docs/screenshots/board.png",
-      "visualAlt": "Prioritized board of open loops",
-      "diagram": "https://raw.githubusercontent.com/lori-sca/muse-adhd-project-manager/main/docs/problem-diagram.svg",
+      "title": "Open Loops Board",
+      "hook": "A scheduled scan that catches everything I leave midway across AI chats and lands it on one prioritized board (Yes, I have ADHD haha). Built so you can repurpose it in your choice of LLMs.",
+      "metric": "In daily use since September · live demo",
+      "visual": "https://raw.githubusercontent.com/lori-sca/muse-adhd-project-manager/main/docs/screenshots/board.png?v=4",
+      "visualAlt": "Open Loops board: demo items, real counts (83 shipped, 60 open)",
+      "diagram": "https://raw.githubusercontent.com/lori-sca/muse-adhd-project-manager/main/docs/problem-diagram.svg?v=2",
       "diagramAlt": "Trap → Insight → Machine diagram",
       "status": "live",
       "links": [
@@ -23,10 +51,10 @@
         }
       ],
       "body": {
-        "problem": "AI chats are where work goes to die midway — brilliant threads abandoned, commitments unconfirmed, and no single place to see what's actually open.",
+        "problem": "AI chats are where work goes to die midway: brilliant threads abandoned, commitments unconfirmed, and no single place to see what's actually open.",
         "approach": "A scheduled scan reads every thread, finds open loops, and lands them on one prioritized board: sense → draft → queue → review.",
-        "hers": "Designed from my own failure modes — ADHD as a design constraint, never an apology. Produced is not shipped.",
-        "result": "In daily use since September 2026. 70+ items confirmed shipped, and only my confirmation clears one.",
+        "hers": "Designed from my own failure modes. ADHD as a design constraint, never an apology. Produced is not shipped.",
+        "result": "In daily use since September 2026. Only my confirmation clears an item.",
         "lesson": "The job isn't organizing tasks. It's noticing them."
       }
     },
@@ -59,35 +87,7 @@
         "result": "Twelve skills published in four sets, each with the problem behind it, setup notes and limits. Anyone can install one in a few minutes.",
         "lesson": "A good skill is mostly boundaries. What it won't do matters more than what it will."
       }
-    },
-    {
-      "id": "site-cms",
-      "title": "The CMS behind this site",
-      "hook": "My portfolio runs on plain HTML and JSON — and I edit every word of it from a custom admin panel, no developer needed.",
-      "metric": "3 sites · 1 admin · 0 build step",
-      "visual": "https://raw.githubusercontent.com/lori-sca/lori-sca.github.io/main/assets/site-cms-diagram.svg",
-      "visualAlt": "Diagram: admin panel edits JSON, GitHub API commits, three sites go live",
-      "status": "live",
-      "links": [
-        {
-          "label": "Repo",
-          "url": "https://github.com/lori-sca/lori-sca.github.io",
-          "kind": "github"
-        },
-        {
-          "label": "Live site",
-          "url": "https://lori-sca.github.io",
-          "kind": "demo"
-        }
-      ],
-      "body": {
-        "problem": "Static sites are cheap and fast, but every copy change meant editing HTML by hand — or paying for a CMS I didn't need. I wanted blog-style editing with flat-file simplicity.",
-        "approach": "Built a single-page admin that reads and writes the sites' JSON content files through the GitHub API. Edit words, upload photos, reorder sections, hit save — live in about a minute. No build step, no database, no monthly bill.",
-        "hers": "Designed from my own failure modes — I kept breaking things with half-finished edits, so every section saves independently and the editor links straight to the page it changes.",
-        "result": "One admin runs all three of my sites. Every word on the About page was edited there.",
-        "lesson": "The best tool is the one you'll actually use."
-      }
     }
   ],
-  "prototyping": "More tools are in the workshop — each one earns its card here when it has a live demo and a written playbook."
+  "prototyping": "More tools are in the workshop. Each one earns its card here when it has a live demo and a written playbook."
 }

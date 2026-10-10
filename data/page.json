@@ -1,7 +1,7 @@
 {
   "meta": {
-    "title": "Builds — Lorisca Cessia",
-    "description": "Working tools with live demos. Designed from real failure modes, built so the thinking is visible in ten seconds."
+    "title": "Builds · Lorisca Cessia",
+    "description": "Working tools and side projects, each with the code and a walkthrough."
   },
   "backLink": {
     "label": "Lorisca ↗",
@@ -26,17 +26,18 @@
     "rows": [
       {
         "k": "Rule",
-        "v": "No card without a live demo and a written playbook"
+        "v": "Every card has working code and a walkthrough"
       },
       {
         "k": "Method",
-        "v": "Designed from my own failure modes; the thinking must survive the 10-second test"
+        "v": "Some fix a problem I kept running into. Some I build for fun."
       },
       {
         "k": "Stack",
-        "v": "Tools-agnostic — whatever fits the problem"
+        "v": "Tools-agnostic, whatever fits the problem or the idea"
       }
-    ]
+    ],
+    "hidden": false
   },
   "prototypingLabel": "Prototyping",
   "layout": {
@@ -56,5 +57,6 @@
         "style": {}
       }
     ]
-  }
+  },
+  "showPrototyping": false
 }
