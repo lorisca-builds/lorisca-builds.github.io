@@ -33,20 +33,20 @@
       "title": "Open Loops Board",
       "hook": "A scheduled scan that catches everything I leave midway across AI chats and lands it on one prioritized board (Yes, I have ADHD haha). Built so you can repurpose it in your choice of LLMs.",
       "metric": "In daily use since September · live demo",
-      "visual": "https://raw.githubusercontent.com/lori-sca/muse-adhd-project-manager/main/docs/screenshots/board.png?v=4",
+      "visual": "https://raw.githubusercontent.com/lorisca-builds/muse-adhd-project-manager/main/docs/screenshots/board.png?v=4",
       "visualAlt": "Open Loops board: demo items, real counts (83 shipped, 60 open)",
-      "diagram": "https://raw.githubusercontent.com/lori-sca/muse-adhd-project-manager/main/docs/problem-diagram.svg?v=2",
+      "diagram": "https://raw.githubusercontent.com/lorisca-builds/muse-adhd-project-manager/main/docs/problem-diagram.svg?v=2",
       "diagramAlt": "Trap → Insight → Machine diagram",
       "status": "live",
       "links": [
         {
           "label": "Repo",
-          "url": "https://github.com/lori-sca/muse-adhd-project-manager",
+          "url": "https://github.com/lorisca-builds/muse-adhd-project-manager",
           "kind": "github"
         },
         {
           "label": "Live demo",
-          "url": "https://lori-sca.github.io/muse-adhd-project-manager/board/index.html",
+          "url": "https://lorisca-builds.github.io/muse-adhd-project-manager/board/index.html",
           "kind": "demo"
         }
       ],
