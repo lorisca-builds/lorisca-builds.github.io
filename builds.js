@@ -197,9 +197,27 @@
         if (on) setText("proto-text", data.prototyping);
       }
 
-      // a link to #card-… (Home's Deep dive) or the old #build-… scrolls to that card
-      const m = /^#(?:card|build)-(.+)$/.exec(location.hash);
-      if (m) { const c = document.getElementById("card-" + m[1]); if (c) setTimeout(() => c.scrollIntoView({ block: "center" }), 60); }
+      // A link to #card-<id> (Home's Deep dive, resume links) or the old #build-<id> scrolls
+      // to that card and rings it for a moment. It never opens the walkthrough or rewrites the URL.
+      const safeId = (x) => { try { return decodeURIComponent(x); } catch (e) { return x; } };
+      const focusFromHash = () => {
+        const m = /^#(?:card|build)-(.+)$/.exec(location.hash);
+        const c = m && document.getElementById("card-" + safeId(m[1]));
+        if (!c) return;
+        setTimeout(() => {
+          c.scrollIntoView({ block: "center" });
+          c.classList.remove("is-linked"); void c.offsetWidth; c.classList.add("is-linked");
+          setTimeout(() => c.classList.remove("is-linked"), 2400);
+        }, 60);
+      };
+      focusFromHash();
+      window.addEventListener("hashchange", focusFromHash);
+      // Pictures above the card can still be loading and push it down. Centre it again once they have.
+      if (document.readyState !== "complete") window.addEventListener("load", () => {
+        const m = /^#(?:card|build)-(.+)$/.exec(location.hash);
+        const c = m && document.getElementById("card-" + safeId(m[1]));
+        if (c) c.scrollIntoView({ block: "center" });
+      }, { once: true });
 
       // section order, hidden sections, looks and builder-added sections (admin page builder)
       if (window.Theme && Theme.applyLayout && page && page.layout) Theme.applyLayout(document.querySelector("main"), { hero: hero, projects: data, page: page || {} }, { site: site, layoutIn: "page" });
