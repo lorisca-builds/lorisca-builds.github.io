@@ -111,3 +111,10 @@
 @keyframes card-linked { 0%, 70% { outline-color: var(--accent); } 100% { outline-color: transparent; } }
 .is-linked { outline: 2px solid var(--accent); outline-offset: 4px; animation: card-linked 2.4s ease-out forwards; }
 @media (prefers-reduced-motion: reduce) { .is-linked { animation: none; } }
+
+/* ---------- card focus (Nov 11): cards stand out from a tinted page, the open card gets a solid accent ring ---------- */
+:root { --card-page: var(--surface); --card-bg: var(--bg); --card-lift: 0 24px 50px -24px rgba(30,45,66,.45); }
+[data-theme="dark"] { --card-page: var(--bg); --card-bg: var(--surface); --card-lift: 0 24px 50px -20px rgba(0,0,0,.7); }
+#builds { background: var(--card-page); }
+.b-card { background: var(--card-bg); box-shadow: var(--shadow); }
+.b-card.open { border-color: var(--accent); box-shadow: 0 0 0 1px var(--accent), var(--card-lift); }
